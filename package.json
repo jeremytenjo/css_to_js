@@ -1,19 +1,27 @@
 {
-  "name": "css-to-js",
-  "displayName": "CSS to JS",
+  "name": "css-to-js-converter",
+  "displayName": "CSS to JS Converter",
   "description": "Convert css to javascript object",
-  "version": "0.0.3",
-  "publisher": "tgreen7",
+  "version": "0.0.1",
+  "publisher": "tenjojeremy",
   "engines": {
     "vscode": "^1.46.0"
   },
-  "homepage": "https://github.com/tgreen7/css_to_js",
+  "icon": "assets/images/logo.png",
+  "homepage": "https://github.com/jeremytenjo/css_to_js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tgreen7/css_to_js"
+    "url": "https://github.com/jeremytenjo/css_to_js"
   },
   "bugs": {
-    "url": "https://github.com/tgreen7/css_to_js/issues"
+    "url": "https://github.com/jeremytenjo/css_to_js/issues"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
+    "deploy": "npm run publish",
+    "publish": "vsce publish"
   },
   "license": "MIT",
   "categories": [
@@ -45,24 +53,19 @@
     "keybindings",
     "javascript"
   ],
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "yarn run lint",
-    "test": "node ./test/runTest.js"
-  },
   "devDependencies": {
-    "@types/vscode": "^1.46.0",
     "@types/glob": "^7.1.3",
     "@types/mocha": "^8.0.4",
     "@types/node": "^12.11.7",
+    "@types/vscode": "^1.46.0",
     "eslint": "^7.19.0",
     "glob": "^7.1.6",
-    "mocha": "^8.2.1",
-    "typescript": "^4.1.3",
-    "vscode-test": "^1.5.0",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
-    "prettier": "^2.2.1"
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.1.3",
+    "vscode-test": "^1.5.0"
   },
   "husky": {
     "hooks": {

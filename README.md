@@ -1,10 +1,10 @@
-# css_to_js README
+<p align="center">
+  <a href="https://jeremytenjo.com/" rel="noopener" target="_blank"><img width="200" src="https://github.com/jeremytenjo/css_to_js/blob/main/assets/images/logo.png?raw=true" alt="Create Modern App Logo"></a></p>
+</p>
 
-## Convert CSS in JS
+<h1 align="center">CSS to JS Converter</h1>
 
-![demo](https://user-images.githubusercontent.com/737065/28219279-6ffbf4c4-6889-11e7-8d3d-51637fe90856.gif)
-
-## How to Use CSS Conversion
+### How to use
 
 Select some block of text in a `javascript` or `typescript` file and use `cmd+shift+p` to bring up the command palette, then select `Convert CSS-in-JS`.
 
